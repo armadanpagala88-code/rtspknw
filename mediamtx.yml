@@ -1,0 +1,83 @@
+###############################################
+# General
+
+# Log level
+logLevel: info
+
+# Destinations of functionalities
+paths:
+  # Configuration for all paths (wildcard)
+  all:
+    source: publisher
+
+  # RTSP Streams
+  cam01:
+    source: rtsp://admin:2025-CCTVknw@172207219721.ip-dynamic.com:554/stream2
+  cam02:
+    source: rtsp://admin:2025-CCTVknw@172207219721.ip-dynamic.com:555/stream2
+  cam03:
+    source: rtsp://admin:2025-CCTVknw@172207219718.ip-dynamic.com:6560/stream2
+  cam04:
+    source: rtsp://admin:2025-CCTVknw@172207219718.ip-dynamic.com:6559/stream2
+  cam05:
+    source: rtsp://admin:2025-CCTVknw@172207219370.ip-dynamic.com:6559/stream1
+  cam06:
+    source: rtsp://admin:2025-CCTVknw@172207219370.ip-dynamic.com:6560/stream1
+  cam07:
+    source: rtsp://admin:2025-CCTVknw@172207219688.ip-dynamic.com:6559/stream2
+  cam08:
+    source: rtsp://admin:2025-CCTVknw@172207219688.ip-dynamic.com:6560/stream2
+  cam09:
+    source: rtsp://admin:2025-CCTVknw@172207219004.ip-dynamic.com:6552/stream2
+  cam10:
+    source: rtsp://admin:2025-CCTVknw@172207219004.ip-dynamic.com:6551/stream2
+  cam11:
+    source: rtsp://admin:2025-CCTVknw@172207218721.ip-dynamic.com:6555/stream2
+  cam12:
+    source: rtsp://admin:2025-CCTVknw@172207218721.ip-dynamic.com:6551/stream2
+  cam13:
+    source: rtsp://admin:2025-CCTVknw@172207219386.ip-dynamic.com:6550/stream2
+  cam14:
+    source: rtsp://admin:2025-CCTVknw@172207219386.ip-dynamic.com:6551/stream2
+  cam15:
+    source: rtsp://admin:2025-CCTVknw@172207219774.ip-dynamic.com:6550/stream2
+  cam16:
+    source: rtsp://admin:2025-CCTVknw@172207219774.ip-dynamic.com:6551/stream2
+  cam17:
+    source: rtsp://admin:2025-CCTVknw@172207219469.ip-dynamic.com:6550/stream2
+  cam18:
+    source: rtsp://admin:2025-CCTVknw@172207219469.ip-dynamic.com:6551/stream2
+
+###############################################
+# RTSP
+
+# Enable RTSP protocol
+rtsp: yes
+# RTSP port
+rtspAddress: :8554
+
+###############################################
+# RTMP
+
+# Enable RTMP protocol
+rtmp: yes
+# RTMP port
+rtmpAddress: :1935
+
+###############################################
+# HLS
+
+# Enable HLS protocol
+hls: yes
+# HLS port
+hlsAddress: :8888
+# Muxing (creating segments)
+
+
+###############################################
+# WebRTC
+
+# Enable WebRTC protocol
+webrtc: yes
+# WebRTC port
+webrtcAddress: :8889

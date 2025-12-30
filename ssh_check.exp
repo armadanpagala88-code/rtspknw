@@ -1,0 +1,18 @@
+set timeout 30
+spawn ssh -o StrictHostKeyChecking=no root@72.61.213.95
+expect {
+    -nocase "password:" {
+        send "FANtasi-3112\r"
+        exp_continue
+    }
+    "#" {
+        send "docker ps\r"
+        expect "#"
+        send "docker logs mediamtx --tail 20\r"
+        expect "#"
+        send "docker exec mediamtx cat /mediamtx.yml | head -n 10\r"
+        expect "#"
+        send "exit\r"
+    }
+}
+expect eof
