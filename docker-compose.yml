@@ -3,12 +3,7 @@ services:
     image: bluenviron/mediamtx:latest
     container_name: mediamtx
     restart: unless-stopped
-    ports:
-      - "8554:8554" # RTSP
-      - "1935:1935" # RTMP
-      - "8888:8888" # HLS
-      - "8889:8889" # WebRTC
-      - "8189:8189/udp" # WebRTC/ICE
+    network_mode: host
     environment:
       - MTX_CONFIGPATH=/config/mediamtx.yml
     volumes:
