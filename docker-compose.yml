@@ -9,5 +9,7 @@ services:
       - "8888:8888" # HLS
       - "8889:8889" # WebRTC
       - "8189:8189/udp" # WebRTC/ICE
+    environment:
+      - MTX_CONFIGPATH=/config/mediamtx.yml
     volumes:
-      - ./mediamtx_vps.yml:/mediamtx.yml
+      - ./config:/config
