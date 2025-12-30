@@ -5,6 +5,7 @@
 logLevel: info
 
 # Destinations of functionalities
+paths:
   # cam01
   cam01:
     source: rtsp://admin:2025-CCTVknw@172207219721.ip-dynamic.com:554/stream2
