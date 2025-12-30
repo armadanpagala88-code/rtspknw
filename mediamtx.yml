@@ -41,7 +41,7 @@ paths:
     source: rtsp://admin:2025-CCTVknw@172207218721.ip-dynamic.com:6555/stream2
     sourceProtocol: tcp
   cam12:
-    source: rtsp://admin:2025-CCTVknw@172207218721.ip-dynamic.com:6551/stream2
+    source: rtsp://admin:2025-CCTVknw@172207218721.ip-dynamic.com:6551/stream1
     sourceProtocol: tcp
   cam13:
     source: rtsp://admin:2025-CCTVknw@172207219386.ip-dynamic.com:6550/stream2
